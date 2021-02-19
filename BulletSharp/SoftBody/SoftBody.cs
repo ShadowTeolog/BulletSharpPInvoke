@@ -2942,6 +2942,10 @@ namespace BulletSharp.SoftBody
 			btSoftBody_scale(Native, ref scl);
 		}
 
+		public void SetDampingCoefficient(double dampingCoeff)
+		{
+			btSoftBody_setDampingCoefficient(Native, dampingCoeff);
+		}
 		public void SetMass(int node, double mass)
 		{
 			btSoftBody_setMass(Native, node, mass);
